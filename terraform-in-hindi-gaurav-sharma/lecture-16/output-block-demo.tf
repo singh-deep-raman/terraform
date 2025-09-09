@@ -28,3 +28,5 @@ output "print_repo_html_url" {
 
     # terraform output command only works after terraform apply command has been executed successfully and the state file is created which has output block in it
     # Alternatively, you can see the output values in the state file (terraform.tfstate) directly, but it is not a good practice
+
+    # terraform console (to open an interactive console to query the state file like output values, resource attributes etc.)
