@@ -1,0 +1,12 @@
+{
+  "print_repo_html_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://github.com/singh-deep-raman/test-repo-using-terraform"
+  },
+  "print_repo_ssh_clone_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "git@github.com:singh-deep-raman/test-repo-using-terraform.git"
+  }
+}
