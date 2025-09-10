@@ -1,2 +1,3 @@
 # hidden file in mac that stores custom attributes of a folder like icon positions, folde view mode, sorting preferences, window size etc 
 .DS_Store
+**/.terraform/**
