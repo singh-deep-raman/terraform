@@ -1,0 +1,1 @@
+# This lecture explains about executing a small script on EC2 instance using user data.
