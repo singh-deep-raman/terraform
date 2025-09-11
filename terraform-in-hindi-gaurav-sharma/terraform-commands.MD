@@ -132,3 +132,11 @@ Opens an interactive console to query the state file, output values, resource at
   ```
 
 ---
+
+## 13. terraform taint
+
+- This command marks a resource tainted so that when next terraform apply command is executed, the marked resource is recreated (destroying old one first and creating a new one)
+  ```sh
+  terraform taint aws_security_group.sg-name
+  ```
+- Terraform don't recommend to use this command
