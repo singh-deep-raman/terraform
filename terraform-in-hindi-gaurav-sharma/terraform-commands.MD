@@ -140,3 +140,18 @@ Opens an interactive console to query the state file, output values, resource at
   terraform taint aws_security_group.sg-name
   ```
 - Terraform don't recommend to use this command
+
+## 14. terraform graph
+- This command is used to create a visulization of our infrastructure
+- You need to have graphviz installed to generate graphs, use below command to install
+```sh
+        brew install graphviz
+```
+- Command to generate graph in pdf
+```sh
+terraform graph | dot -Tpdf > filename.pdf
+```
+- Command to generate graph as an image
+```sh
+terraform graph | dot -Tsvg > filename.svg
+```
