@@ -1,4 +1,4 @@
-# you can specify required versions as strictly or with range
+# you can specify required versions as strictly or with range but can't use variables or references to specify the values
 terraform {
   required_version = "1.12.0" # you can specify which terraform should be used to run this code
   # change above value and run terraform commands to see the effect
