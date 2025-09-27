@@ -155,3 +155,33 @@ terraform graph | dot -Tpdf > filename.pdf
 ```sh
 terraform graph | dot -Tsvg > filename.svg
 ```
+
+## 15. terraform workspace <options>
+- This command is used to perform actions around workspaces. We need workspace while working with different development environments like dev, prod etc
+- It will create a .terraform.tfstate.d directory where terraform.tfstate file will be created for the particular workspace
+- By default a workspace is created by terraform with name 'default' for which terraform.tfstate file is under root directory of the project, rest workspace specific tfstate files will be in their respective folders
+
+- Command to list all workspaces
+```sh
+terraform workspace list
+```
+
+- Command to create a workspace
+```sh
+terraform workspace new workspace-name
+```
+
+- Command to show current workspace
+```sh
+terraform workspace show
+```
+
+- Command to switch workspace
+```sh
+terraform workspace select workspace-name
+```
+
+- Command to delete workspace
+```sh
+terraform workspace delete workspace-name
+```
