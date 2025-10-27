@@ -185,3 +185,19 @@ terraform workspace select workspace-name
 ```sh
 terraform workspace delete workspace-name
 ```
+
+## `terraform init -migrate-state`
+
+- The `-migrate-state` option is used with `terraform init` to migrate your existing state file to a new backend.
+- This is useful when you change your backend configuration (for example, moving from local state to remote state like S3, Azure Blob, etc.).
+- When you run `terraform init -migrate-state`, Terraform will prompt you to confirm the migration and then move your state file to the new backend.
+- This helps ensure your infrastructure state is safely transferred and managed in the new backend location.
+
+### Example usage:
+```sh
+terraform init -migrate-state
+```
+
+> **Note:**  
+> Always back up your state file before migrating.  
+> Review backend configuration carefully to avoid accidental
